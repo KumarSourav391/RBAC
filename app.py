@@ -6,7 +6,7 @@ from routes.role import role_bp
 from routes.protected import protected
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///rbac.db' # use your own db url
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:admin@localhost:5432/rbac' # use your own db url
 app.config['JWT_SECRET_KEY'] = 'your-secret-key' # use your secret key
 
 db.init_app(app)
