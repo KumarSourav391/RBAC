@@ -94,7 +94,8 @@ Use Postman or cURL to test the endpoints.
 Ensure roles are created using /role/add_role before assigning them to users during registration.
 
 ## Technologies Used
-Flask: Backend framework.
-JWT: For token-based authentication.
-SQLAlchemy: ORM for database operations.
+Flask: Backend framework.__
+JWT: For token-based authentication.__
+SQLAlchemy: ORM for database operations.__
 bcrypt: For secure password hashing.
+
