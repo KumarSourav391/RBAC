@@ -6,8 +6,8 @@ from routes.role import role_bp
 from routes.protected import protected
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///rbac.db'
-app.config['JWT_SECRET_KEY'] = 'your-secret-key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///rbac.db' # use your own db url
+app.config['JWT_SECRET_KEY'] = 'your-secret-key' # use your secret key
 
 db.init_app(app)
 jwt = JWTManager(app)
