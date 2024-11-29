@@ -51,45 +51,39 @@ This project implements a secure backend system featuring **Authentication**, **
    python app.py
 
 ## Usage
-Register a User:
+### Register a User:
 
-json
-Copy code
 POST /auth/register
 {
   "username": "testuser",
   "password": "password123",
   "role": "admin"
 }
-Log In:
 
-json
-Copy code
+### Log In:
+
 POST /auth/login
 {
   "username": "testuser",
   "password": "password123"
 }
-Response:
 
-json
-Copy code
+#### Response:
+
 {
   "token": "<JWT_TOKEN>"
 }
-Add a Role:
 
-json
-Copy code
+### Add a Role:
+
 POST /role/add_role
 {
   "name": "admin",
   "permissions": ["view_protected", "edit_data"]
 }
-Access a Protected Route:
 
-json
-Copy code
+### Access a Protected Route:
+
 GET /api/protected
 Headers: {
   "Authorization": "Bearer <JWT_TOKEN>"
